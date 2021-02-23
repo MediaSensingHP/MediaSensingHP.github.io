@@ -1,19 +1,260 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>TipsNote : GitHub Pages Sample</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/marx/2.0.4/marx.css">
+	<meta charset="UTF-8">
+	<title>メディアセンシング研究室 -立命館-</title>
+	<link rel="stylesheet" type="text/css" href="src/style/audio.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
 </head>
 
-<body>
-<main>
-  <h1>GitHub Pages のサンプルです</h1>
-  <a href="http://www.tam-tam.co.jp/tipsnote/"><button>TipsNote に戻る</button></a>
-</main>
+<body onload="initialize();">
 
-<script>
-console.log('GitHub Pages Sample');
-</script>
-</body>
+<div id="menu">
+
+    <!-- 画像を変える場合は下のタグのsrcの中のPathを変更してください -->
+    <a href="index.html">
+      <div id="menu-logo">
+        MEDIA SENSING LAB.
+      </div>
+    </a>
+
+    <div id="menu-name">
+      Menu
+    </div>
+
+    <div id="menu-btn">
+      <div id="menu-btn-bar1"></div>
+      <div id="menu-btn-bar2"></div>
+      <div id="menu-btn-bar3"></div>
+    </div>
+
+    <div id="menu-btnclose">
+      <div id="menu-btnclose-bar1"></div>
+      <div id="menu-btnclose-bar2"></div>
+    </div>
+  </div>
+
+ <!-- ポップアップメニューはここから -->
+  <div id="popup">
+  <!-- 下部で読み込み -->
+  </div>
+  <!-- ポップアップメニューはここまで -->
+
+  <!-- トップコンテンツ -->
+  <div id="top">
+    <div class="top-back">
+
+      <div id="carousel">
+        <div><img src="src/img/Acoustics/marshall.png" /></div>
+        <div><img src="src/img/Acoustics/mic5.png" /></div>
+        <div><img src="src/img/Acoustics/mixer.png" /></div>
+        <!-- <div><img src="src/img/Acoustics/piano.png" /></div> -->
+      </div>
+      
+      <div id="titles">
+        <div id="content-title">
+          <p>Acoustics and Signal Processing</p>
+        </div>
+        <div id="content-subtitle">
+          <p>音信号処理</p>
+        </div>   
+      </div>
+
+    </div>
+  </div>
+  <!-- トップコンテンツ はここまで -->
+<!-- メインコンテンツ -->
+  div class="article-space">
+
+   <!-- <div align="center">
+    	<font size="5"> -->
+
+    <div id="message-top">
+      WaveNet Modeling of Distortion Pedal Using Spectral Features<br>
+    </div>
+ <div>
+
+  <p><font size="4">
+    This web site is our simulation results for the Ibanez SD9.<br>
+    <b>Method</b><br>
+    Method MSE: The conventional method that uses only the mean square error 
+                in the time domain.<br>
+    Method Conv. [11]: The conventional method that uses only the error to signal ratio 
+                       with high-pass filter in the time domain.<br>
+    Method PS-EUC: The proposed method that uses MSE in time domain and 
+                    Euclidian distance in frequency domain. <br>
+    Method MFS-KL: The proposed method that uses MSE in time domain and 
+                    generalied KL divergence in frequency domain. <br>
+  </font></p><br>
+  
+  <div align="center">
+    <font size="5">
+      Sound 1
+    </font>
+  </div>
+  
+<!--ここから音源1-->
+<p><font size="4">Input Sound： 
+  <audio src="src/sound_fx/AST音源/Input/Input_test1.wav" controls style="vertical-align: middle;">
+  </audio></font></p><br>
+  
+  <p><font size="4">Target Sound：
+    <audio src="src/sound_fx/AST音源/Target/Target_test1.wav" controls style="vertical-align: middle;">
+	</audio></font></p><br>
+
+ <p><font size="4">Method MSE：
+  <audio src="src/sound_fx/AST音源/MSE/MSE_test1SD.wav" controls style="vertical-align: middle;">
+  </audio></font></p><br>
+
+  <p><font size="4">Conv. [11]：   
+    <audio src="src/sound_fx/AST音源/Conv_highpass/ESR_highpass_test1SD.wav" controls style="vertical-align: middle;">
+    </audio></font></p><br>
+  
+    <p><font size="4">Method PS-EUC：
+      <audio src="src/sound_fx/AST音源/PS_EUC/PS_EUC_test1SD.wav" controls style="vertical-align: middle;">
+  </audio></font></p><br>
+
+  <p><font size="4">Method MFS-KL：
+    <audio src="src/sound_fx/AST音源/MFS_KL/MFS_KL_test1SD.wav" controls style="vertical-align: middle;">
+	</audio></font></p><br>
+</div>
+
+
+<!--ここから音源2-->
+<div align="center">
+  <font size="5">
+    Sound 2
+  </font>
+</div>
+
+<div>
+  <p><font size="4">Input Sound：
+    <audio src="src/sound_fx/AST音源/Input/Input_test2.wav" controls style="vertical-align: middle;">
+    </audio></font></p><br>
+    
+    <p><font size="4">Target Sound：
+      <audio src="src/sound_fx/AST音源/Target/Target_test2.wav" controls style="vertical-align: middle;">
+    </audio></font></p><br>
+  
+   <p><font size="4">Method MSE：
+    <audio src="src/sound_fx/AST音源/MSE/MSE_test2SD.wav" controls style="vertical-align: middle;">
+    </audio></font></p><br>
+  
+    <p><font size="4">Conv. [11]：
+      <audio src="src/sound_fx/AST音源/Conv_highpass/ESR_highpass_test2SD.wav" controls style="vertical-align: middle;">
+      </audio></font></p><br>
+    
+      <p><font size="4">Method PS-EUC：
+        <audio src="src/sound_fx/AST音源/PS_EUC/PS_EUC_test2SD.wav" controls style="vertical-align: middle;">
+    </audio></font></p><br>
+  
+    <p><font size="4">Method MFS-KL：
+      <audio src="src/sound_fx/AST音源/MFS_KL/MFS_KL_test2SD.wav" controls style="vertical-align: middle;">
+    </audio></font></p><br>
+  </div>
+
+
+
+<!--ここから音源3-->
+<div align="center">
+  <font size="5">
+    Sound 3
+  </font>
+</div>
+
+<div>
+<p><font size="4">Input Sound：
+  <audio src="src/sound_fx/AST音源/Input/Input_test3.wav" controls style="vertical-align: middle;">
+  </audio></font></p><br>
+  
+  <p><font size="4">Target Sound：
+    <audio src="src/sound_fx/AST音源/Target/Target_test3.wav" controls style="vertical-align: middle;">
+	</audio></font></p><br>
+
+ <p><font size="4">Method MSE：
+  <audio src="src/sound_fx/AST音源/MSE/MSE_test3SD.wav" controls style="vertical-align: middle;">
+  </audio></font></p><br>
+
+  <p><font size="4">Conv. [11]：
+    <audio src="src/sound_fx/AST音源/Conv_highpass/ESR_highpass_test3SD.wav" controls style="vertical-align: middle;">
+    </audio></font></p><br>
+  
+    <p><font size="4">Method PS-EUC：
+      <audio src="src/sound_fx/AST音源/PS_EUC/PS_EUC_test3SD.wav" controls style="vertical-align: middle;">
+  </audio></font></p><br>
+
+  <p><font size="4">Method MFS-KL：
+    <audio src="src/sound_fx/AST音源/MFS_KL/MFS_KL_test3SD.wav" controls style="vertical-align: middle;">
+	</audio></font></p><br>
+</div>
+
+
+<!--ここから音源4-->
+<div align="center">
+  <font size="5">
+    Sound 4
+  </font>
+</div>
+
+<div>
+  <p><font size="4">Input Sound：
+    <audio src="src/sound_fx/AST音源/Input/Input_test4.wav" controls style="vertical-align: middle;">
+    </audio></font></p><br>
+    
+    <p><font size="4">Target Sound：
+      <audio src="src/sound_fx/AST音源/Target/Target_test4.wav" controls style="vertical-align: middle;">
+    </audio></font></p><br>
+  
+   <p><font size="4">Method MSE：
+    <audio src="src/sound_fx/AST音源/MSE/MSE_test4SD.wav" controls style="vertical-align: middle;">
+    </audio></font></p><br>
+  
+    <p><font size="4">Conv. [11]：
+      <audio src="src/sound_fx/AST音源/Conv_highpass/ESR_highpass_test4SD.wav" controls style="vertical-align: middle;">
+      </audio></font></p><br>
+    
+      <p><font size="4">Method PS-EUC：
+        <audio src="src/sound_fx/AST音源/PS_EUC/PS_EUC_test4SD.wav" controls style="vertical-align: middle;">
+    </audio></font></p><br>
+  
+    <p><font size="4">Method MFS-KL：
+      <audio src="src/sound_fx/AST音源/MFS_KL/MFS_KL_test4SD.wav" controls style="vertical-align: middle;">
+    </audio></font></p><br>
+  </div>  
+</div>
+
+
+
+
+<div id="credit">
+      Copyright Media Sensing Lab. All Rights Reserved.
+    </div>
+
+  <!-- main.jsのインポート -->
+  <!-- #boxに注目 -->
+  <!--
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="src/script/main.js" type="text/javascript"></script>
+
+  <!-- スクロールに合わせて画像をパララックスコントロール -->
+  <script src="src/script/parallax.js" type="text/javascript"></script>
+
+  <!-- タイトル画像のためのインポート -->
+  <!-- #carouselに注目 -->
+  <script src="src/script/jquery.carouFredSel-6.2.0-packed.js" type="text/javascript"></script>
+  <script src="src/script/jquery.carouFredSel.SlidePic.js" type="text/javascript"></script>
+
+  <!-- 横からスライドするためのインポート -->
+  <!-- #scroll -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery-inview@1.1.2/jquery.inview.min.js"></script>
+  <script src="src/script/jquery.inview.slide.js" type="text/javascript"></script>
+	<script>
+    $(function(){
+      $("#popup").load("src/script/popup.html");
+    });
+  </script>
+
+ </body>
 </html>

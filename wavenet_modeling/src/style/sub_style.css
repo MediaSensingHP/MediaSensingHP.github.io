@@ -1,0 +1,70 @@
+/* トップページ以外で読み込むCSS */
+
+@import url(main_style.css);
+
+/****トップ****/
+	#top{
+		width: 100%;
+		min-height: 100%;
+		position: relative;
+		top: 50px;
+		margin-bottom: 50px;
+	}
+
+	.top-titles, .top-subtitles{
+		width: calc(100% - 120px);
+		margin-left: 60px;
+		font-size: 2rem;
+		font-weight: 200;
+		margin-top: 50px;
+		border-bottom: 1px solid #000;
+	}
+
+	.top-name, .top-text, .top-place, .top-date, .top-pub-box{
+		width: calc(100% - 120px);
+		margin-left: 60px;
+		margin-top: 5px;
+		font-size: 1rem;
+	}
+
+	.top-name{
+		margin-top: 20px;
+		font-weight: 600;
+		color: #000;
+	}
+
+	.top-name2{
+		font-weight: 600;
+		color: #000;
+	}
+
+	.top-pub-box{
+		margin-top: 20px;
+		/*font-weight: 300;*/
+		font-size: 1.3rem;
+	}
+
+	.top-subtitles{
+		margin-top: 20px;
+		margin-bottom: 20px;
+		padding:1px 0 1px 10px;	
+		border-left: 1px solid #000;
+		border-bottom: none;
+		font-size:1.5rem;
+	}
+
+
+/* RWD */
+@media only screen and (max-width:600px){
+
+	.top-titles, .top-subtitles{
+		width: calc(100% - 40px);
+		margin-left: 20px;
+	}
+
+	.top-name, .top-text, .top-place, .top-date, .top-pub-box{
+		width: calc(100% - 40px);
+		margin-left: 20px;
+	}
+
+}

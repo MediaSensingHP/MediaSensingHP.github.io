@@ -1,0 +1,173 @@
+/* すべてのCSSで読み込むCSS */
+
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+html, body{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	font-family: 'Noto Sans Japanese';
+	font-weight: 100;
+	font-size: 12px;
+	-ms-overflow-x: hidden;
+	    overflow-x: hidden;
+	letter-spacing: 2px;
+}
+
+a{
+	text-decoration: none;
+}
+
+button{
+	background: 0;
+	border: none;
+	outline: none;
+	font-family: 'Noto Sans Japanese';
+	font-weight: 100;
+	font-size: 12px;
+}
+
+/****メニュー****/
+	#menu{
+		width: 100%;
+		height: 50px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background: #000;
+		z-index: 100;
+	}
+
+	#menu-logo{
+		position: absolute;
+		top: 12px;
+		left: 20px;
+		font-size: 1.7rem;
+		color: #FFF;
+	}
+
+	#menu-name{
+		position: absolute;
+		top: 13px;
+		right: 60px;
+		font-size: 1.5rem;
+		color: #FFF;
+	}
+
+	#menu-btn{
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		top: 10px;
+		right: 20px;
+	}
+
+	#menu-btn-bar1, #menu-btn-bar2, #menu-btn-bar3{
+		width: 30px;
+		height: 1px;
+		position: absolute;
+		left: 0;
+		background: #FFF;
+	}
+
+	#menu-btn-bar1{
+		top: 5px;
+	}
+
+	#menu-btn-bar2{
+		top: 14px;
+	}
+
+	#menu-btn-bar3{
+		top: 24px;
+	}
+
+	#menu-btnclose{
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		top: 10px;
+		right: 20px;
+		opacity: 0;
+	}
+
+	#menu-btnclose-bar1{
+		background: #FFF;
+		width: 42px;
+		height: 1px;
+		-webkit-transform: rotate(-45deg);
+		   -moz-transform: rotate(-45deg);
+		    -ms-transform: rotate(-45deg);
+		     -o-transform: rotate(-45deg);
+		        transform: rotate(-45deg);
+		position: absolute;
+		top: 15px;
+		left: -5px;
+	}
+
+	#menu-btnclose-bar2{
+		background: #FFF;
+		width: 42px;
+		height: 1px;
+		-webkit-transform: rotate(45deg);
+		   -moz-transform: rotate(45deg);
+		    -ms-transform: rotate(45deg);
+		     -o-transform: rotate(45deg);
+		        transform: rotate(45deg);
+		position: absolute;
+		top: 15px;
+		left: -5px;
+	}
+/****メニュー****/
+
+/****ポップアップ****/
+	#popup{
+		width: 350px;
+		height: calc(100% - 50px);
+		position: fixed;
+		top: 50px;
+		right: -350px;
+		background: rgba(0,0,0,0.8);
+		z-index: 90;
+		-ms-overflow-y: scroll;
+		    overflow-y: scroll;
+	}
+
+	#popup-topmargin{
+		height: 50px;
+	}
+
+	.popup-items{
+		width: calc(100% - 20px);
+		margin-top: 20px;
+		padding-top: 10px;
+		padding-left: 20px;
+		padding-bottom: 10px;
+		color: #FFF;
+	}
+/****ポップアップ****/
+
+#credit{
+	width: 100%;
+	background: #000;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 1rem;
+	text-align: center;
+	color: #FFF;
+}
+
+/* RWD */
+@media only screen and (max-width:600px){
+
+	html, body{
+		font-size: 10px;
+	}
+
+	html{
+		 -webkit-overflow-scrolling: touch;
+	}
+
+}

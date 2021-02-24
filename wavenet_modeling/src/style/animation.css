@@ -1,0 +1,320 @@
+/*アニメーションの設定*/
+
+	/*起動時トップ*/
+
+	#top-logo-bar1{
+		-webkit-animation: top-anime-1 3s ease .1s forwards;
+		   -moz-animation: top-anime-1 3s ease .1s forwards;
+		    -ms-animation: top-anime-1 3s ease .1s forwards;
+		     -o-animation: top-anime-1 3s ease .1s forwards;
+		        animation: top-anime-1 3s ease .1s forwards;
+	}
+
+	#top-logo-bar2{
+		-webkit-animation: top-anime-2 3s ease .1s forwards;
+		   -moz-animation: top-anime-2 3s ease .1s forwards;
+		    -ms-animation: top-anime-2 3s ease .1s forwards;
+		     -o-animation: top-anime-2 3s ease .1s forwards;
+		        animation: top-anime-2 3s ease .1s forwards;
+	}
+
+	#top-logo-bar3{
+		-webkit-animation: top-anime-3 3s ease .1s forwards;
+		   -moz-animation: top-anime-3 3s ease .1s forwards;
+		    -ms-animation: top-anime-3 3s ease .1s forwards;
+		     -o-animation: top-anime-3 3s ease .1s forwards;
+		        animation: top-anime-3 3s ease .1s forwards;
+	}
+
+	#top-logo-bar4{
+		-webkit-animation: top-anime-4 3s ease .1s forwards;
+		   -moz-animation: top-anime-4 3s ease .1s forwards;
+		    -ms-animation: top-anime-4 3s ease .1s forwards;
+		     -o-animation: top-anime-4 3s ease .1s forwards;
+		        animation: top-anime-4 3s ease .1s forwards;
+	}
+
+	#top-logo-text{
+		-webkit-animation: fadein 1s ease 2.3s forwards;
+		   -moz-animation: fadein 1s ease 2.3s forwards;
+		    -ms-animation: fadein 1s ease 2.3s forwards;
+		     -o-animation: fadein 1s ease 2.3s forwards;
+		        animation: fadein 1s ease 2.3s forwards;
+	}
+
+	#top-sub{
+		-webkit-animation: fadein 1s ease 3s forwards;
+		   -moz-animation: fadein 1s ease 3s forwards;
+		    -ms-animation: fadein 1s ease 3s forwards;
+		     -o-animation: fadein 1s ease 3s forwards;
+		        animation: fadein 1s ease 3s forwards;
+	}
+
+	#top-btn{
+		-webkit-animation: fadein 1s ease 3s forwards;
+		   -moz-animation: fadein 1s ease 3s forwards;
+		    -ms-animation: fadein 1s ease 3s forwards;
+		     -o-animation: fadein 1s ease 3s forwards;
+		        animation: fadein 1s ease 3s forwards;
+	}
+
+	#top-btn2{
+		-webkit-animation: fadein 1s ease 3s forwards;
+		   -moz-animation: fadein 1s ease 3s forwards;
+		    -ms-animation: fadein 1s ease 3s forwards;
+		     -o-animation: fadein 1s ease 3s forwards;
+		        animation: fadein 1s ease 3s forwards;
+	}
+
+	@keyframes fadein {
+	    0% {
+	    	opacity: 0;
+	    }
+
+	    100%{
+	    	opacity: 1;
+	    }
+	}
+
+	@-webkit-keyframes fadein {
+	    0% {
+	    	opacity: 0;
+	    }
+
+	    100%{
+	    	opacity: 1;
+	    }
+	}
+
+	@keyframes top-anime-1 {
+	    0% {
+	        left: -150px;
+	    	opacity: 0;
+	    }
+
+	    10% {
+	        left: -150px;
+	    	opacity: 1;
+	    }
+
+	    30% {
+	        left: 0px;
+	    	opacity: 1;
+	    }
+
+	    90%{
+	    	left: 0px;
+	    	opacity: 1;
+	    }
+
+	    100%{
+	    	left: 0px;
+	    	opacity: 0;
+	    }
+	}
+
+	@-webkit-keyframes top-anime-1 {
+	    0% {
+	        left: -150px;
+	    	opacity: 0;
+	    }
+
+	    10% {
+	        left: -150px;
+	    	opacity: 1;
+	    }
+
+	    30% {
+	        left: 0px;
+	    	opacity: 1;
+	    }
+
+	    90%{
+	    	left: 0px;
+	    	opacity: 1;
+	    }
+
+	    100%{
+	    	left: 0px;
+	    	opacity: 0;
+	    }
+	}
+
+	@keyframes top-anime-2 {
+		0%{
+	        left: 350px;
+	        opacity: 0;
+		}
+
+		10%{
+	        left: 350px;
+	        opacity: 1;
+		}
+	    30% {
+	        left: 350px;
+	        opacity: 1;
+	    }
+
+	    50% {
+	        left: 200px;
+	        opacity: 1;
+	    }
+
+	    90%{
+	        left: 200px;
+	        opacity: 1;
+	    }
+
+	    100%{
+	        left: 200px;
+	        opacity: 0;
+	    }
+	}
+
+	@-webkit-keyframes top-anime-2 {
+		0%{
+	        left: 350px;
+	        opacity: 0;
+		}
+
+		10%{
+	        left: 350px;
+	        opacity: 1;
+		}
+	    30% {
+	        left: 350px;
+	        opacity: 1;
+	    }
+
+	    50% {
+	        left: 200px;
+	        opacity: 1;
+	    }
+
+	    90%{
+	        left: 200px;
+	        opacity: 1;
+	    }
+
+	    100%{
+	        left: 200px;
+	        opacity: 0;
+	    }
+	}
+
+	@keyframes top-anime-3 {
+	    0% {
+	        top: -300px;
+	        opacity: 0;
+	    }
+	    10% {
+	        top: -300px;
+	        opacity: 1;
+	    }
+
+	    50% {
+	        top: -300px;
+	        opacity: 1;
+	    }
+
+	    70% {
+	        top: -150px;
+	        opacity: 1;
+	    }
+
+	    90% {
+	        top: -150px;
+	        opacity: 1;
+	    }
+
+	    100% {
+	        top: -150px;
+	        opacity: 0;
+	    }
+	}
+
+	@-webkit-keyframes top-anime-3 {
+	    0% {
+	        top: -300px;
+	        opacity: 0;
+	    }
+	    10% {
+	        top: -300px;
+	        opacity: 1;
+	    }
+
+	    50% {
+	        top: -300px;
+	        opacity: 1;
+	    }
+
+	    70% {
+	        top: -150px;
+	        opacity: 1;
+	    }
+
+	    90% {
+	        top: -150px;
+	        opacity: 1;
+	    }
+
+	    100% {
+	        top: -150px;
+	        opacity: 0;
+	    }
+	}
+
+	@keyframes top-anime-4 {
+	    0% {
+	        top: 150px;
+	        opacity: 0;
+	    }
+
+	    10% {
+	        top: 150px;
+	        opacity: 1;
+	    }
+
+	    70% {
+	        top: 150px;
+	        opacity: 1;
+	    }
+
+	    90% {
+	        top: 0px;
+	        opacity: 1;
+	    }
+
+	    100% {
+	        top: 0px;
+	        opacity: 0;
+	    }
+	}
+
+	@-webkit-keyframes top-anime-4 {
+	    0% {
+	        top: 150px;
+	        opacity: 0;
+	    }
+
+	    10% {
+	        top: 150px;
+	        opacity: 1;
+	    }
+
+	    70% {
+	        top: 150px;
+	        opacity: 1;
+	    }
+
+	    90% {
+	        top: 0px;
+	        opacity: 1;
+	    }
+
+	    100% {
+	        top: 0px;
+	        opacity: 0;
+	    }
+	}
+/*アニメーションの設定

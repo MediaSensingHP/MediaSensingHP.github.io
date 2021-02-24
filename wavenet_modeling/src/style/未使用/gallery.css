@@ -1,0 +1,33 @@
+@import url(sub_style.css);
+
+/****トップ****/
+
+.top-img-box{
+	width: calc(100% - 120px);
+	margin-left: 60px;
+	margin-top: 15px;
+}
+
+.top-summary-img{
+	width: 32%;
+}
+
+.top-clear{
+	clear:both;
+}
+
+
+/* RWD */
+@media only screen and (max-width:600px){
+
+	.top-img-box{
+		width: calc(100% - 40px);
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.top-summary-img{
+	width: 32%;
+	}
+
+}

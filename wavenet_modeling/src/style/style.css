@@ -1,0 +1,736 @@
+/* トップページ用のCSS */
+
+@import url(main_style.css);
+
+/*全体にしようするタイトル*/
+	.content-titles{
+		width: calc(100% - 40px);
+		text-align: center;
+		margin-left: 20px;
+		font-size: 3rem;
+		padding-top: 50px;
+	}
+
+	.content-subtitles{
+		width: calc(100% - 40px);
+		text-align: center;
+		margin-left: 20px;
+		padding-top: 2px;
+		font-size: 1.5rem;
+	}
+
+	.content-textbox{
+		width: calc(100% - 40px);
+		text-align: center;
+		margin-left: 20px;
+		padding-top: 20px;
+		padding-bottom: 70px;
+		font-size: 1rem;
+	}
+
+	.notcenter{
+		text-align: left;
+	}
+/*全体にしようするタイトル*/
+
+/* 装飾 */
+	.important{
+		color: #00f;
+		background-color: #fff;
+		padding-left: 5px;
+		padding-right: 5px;
+		margin-left: 10px;
+	}
+
+
+/****トップ****/
+	#top{
+		width: 100%;
+		height: calc(100% - 50px);
+		position: relative;
+		top: 50px;
+		margin-bottom: 50px;
+		background: url(../img/top.jpg);
+		-webkit-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+		overflow: hidden;
+	}
+
+	#top-back{
+		width: 100%;
+		height: 100%;
+		background: #000;
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0.8;
+	}
+
+	#top-logo{
+		width: 700px;
+		height: 200px;
+		position: absolute;
+		bottom: calc(50% - 70px);
+		left: calc(50% - 350px);
+	}
+
+	#top-logo-text{
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		color: #FFF;
+		font-size: 5rem;
+		letter-spacing: 4px;
+		position: relative;
+		left: 0px;
+		opacity: 0;
+	}
+
+	#top-logo-bar1, #top-logo-bar2, #top-logo-bar3, #top-logo-bar4{
+		background: #FFF;
+		position: absolute;
+		z-index: 5;
+		opacity: 0;
+	}
+
+	#top-logo-bar1{
+		width: 500px;
+		height: 2px;
+		top: 52px;
+		left: 0;
+	}
+
+	#top-logo-bar2{
+		width: 500px;
+		height: 2px;
+		top: 68px;
+		left: 200px;
+	}
+
+	#top-logo-bar3{
+		width: 2px;
+		height: 300px;
+		top: -150px;
+		left: 67px;
+	}
+
+	#top-logo-bar4{
+		width: 2px;
+		height: 300px;
+		top: 0;
+		left: 518px;
+	}
+
+	#top-sub{
+		width: 700px;
+		height: 50px;
+		position: absolute;
+		top: calc(50% - 20px);
+		left: calc(50% - 350px);
+		color: #FFF;
+		text-align: center;
+		font-size: 1.75rem;
+		letter-spacing: 5px;
+		opacity: 0;
+	}
+
+	#top-btn{
+		width: 400px;
+		height: 50px;
+		border: 1px solid #fff;
+		position: absolute;
+		top: calc(50% + 100px);
+		left: calc(50% - 200px);
+		color: #FFF;
+		font-size: 1.5rem;
+		letter-spacing: 5px;
+		-webkit-transition: all 0.5s;
+		   -moz-transition: all 0.5s;
+		    -ms-transition: all 0.5s;
+		     -o-transition: all 0.5s;
+		        transition: all 0.5s;
+		opacity: 0;
+	}
+
+	#top-btn:hover{
+		opacity: 0.7;
+		border: 1px solid #60AFFF;
+		color: #60AFFF;
+	}
+
+	#top-btn2{
+		width: 400px;
+		height: 50px;
+		border: 1px solid #fff;
+		position: absolute;
+		top: calc(50% + 200px);
+		left: calc(50% - 200px);
+		color: #FFF;
+		font-size: 1.5rem;
+		letter-spacing: 5px;
+		-webkit-transition: all 0.5s;
+		   -moz-transition: all 0.5s;
+		    -ms-transition: all 0.5s;
+		     -o-transition: all 0.5s;
+		        transition: all 0.5s;
+		opacity: 0;
+	}
+
+	#top-btn2:hover{
+		opacity: 0.7;
+		border: 1px solid #60AFFF;
+		color: #60AFFF;
+	}
+/****トップ****/
+
+/****アバウトリスト****/
+	#about{
+		width: 100%;
+		height: auto;
+		background: #222;
+		color: #FFF;
+	}
+/****アバウトリスト****/
+
+
+/****論文リスト****/
+	#book{
+		width: 100%;
+		height: 400px;
+		background: #fff;
+		color: #222;
+	}
+
+	#book-btn{
+		width: 300px;
+		height: 50px;
+		border: 1px solid #222;
+		color: #222;
+		font-size: 1.5rem;
+		letter-spacing: 5px;
+		margin-left: calc(50% - 150px);
+		-webkit-transition: all 0.5s;
+		   -moz-transition: all 0.5s;
+		    -ms-transition: all 0.5s;
+		     -o-transition: all 0.5s;
+		        transition: all 0.5s;
+	}
+
+	#book-btn:hover{
+		opacity: 0.7;
+		border: 1px solid #60AFFF;
+		color: #60AFFF;
+	}
+
+	.book-update-box{
+		height: 150px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		overflow: scroll;
+	}
+/****論文リスト****/
+
+/****研究****/
+	#research{
+		width: 100%;
+		height: 300px;
+		background: #000;
+	}
+
+	.research-items{
+		width: calc(100% / 4);
+		height: 100%;
+		float: left;
+		color: #FFF;
+		position: relative;
+		overflow: hidden;
+		-webkit-transform: skew(-20deg);
+		   -moz-transform: skew(-20deg);
+		     -o-transform: skew(-20deg);
+	}
+
+	#research-item1{
+		background: url(../img/camera.jpg);
+		-webkit-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+	}
+
+	#research-item2{
+		background: url(../img/mri.jpg);
+		-webkit-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+	}
+
+	#research-item3{
+		background: url(../img/piano.jpg);
+		-webkit-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+	}
+
+	#research-item4{
+		background: url(../img/signal.jpg);
+		-webkit-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+	}
+
+	.research-items-back{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: rgba(0,0,0,0.5);
+		-webkit-transition: all 0.5s;
+		   -moz-transition: all 0.5s;
+		    -ms-transition: all 0.5s;
+		     -o-transition: all 0.5s;
+		        transition: all 0.5s;
+	}
+
+	.research-items-back-title{
+		margin-left: 50px;
+		margin-top: 90px;
+		font-size: 2rem;
+	}
+
+	.research-items-back-subtitle{
+		margin-left: 50px;
+		margin-top: 15px;
+		font-size: 1rem;
+	}
+
+	.research-items-back-btn{
+		width: 100%;
+		height: 30px;
+		position: absolute;
+		top: 180px;
+		left: 50px;
+		color: #FFF;
+	}
+
+	.research-items-back-btn-arrowbar{
+		width: 30px;
+		height: 1px;
+		position: absolute;
+		top: 191px;
+		left: 100px;
+		background: #FFF;
+		-webkit-transition: all 0.5s;
+		   -moz-transition: all 0.5s;
+		    -ms-transition: all 0.5s;
+		     -o-transition: all 0.5s;
+		        transition: all 0.5s;
+	}
+
+	.research-items-back-btn-arrow{
+		width: 5px;
+		height: 5px;
+		font-size: 3rem;
+		position: absolute;
+		top: 190px;
+		left: 121px;
+		-webkit-transition: all 0.5s;
+		   -moz-transition: all 0.5s;
+		    -ms-transition: all 0.5s;
+		     -o-transition: all 0.5s;
+		        transition: all 0.5s;
+	}
+
+	.research-items-back-btn-arrow-bar1{
+		width: 10px;
+		height: 1px;
+		background: #FFF;
+		-webkit-transform: rotate(-30deg);
+		   -moz-transform: rotate(-30deg);
+		    -ms-transform: rotate(-30deg);
+		     -o-transform: rotate(-30deg);
+		        transform: rotate(-30deg);
+		position: absolute;
+		top: 4px;
+	}
+
+	.research-items-back-btn-arrow-bar2{
+		width: 10px;
+		height: 1px;
+		background: #FFF;
+		-webkit-transform: rotate(30deg);
+		   -moz-transform: rotate(30deg);
+		    -ms-transform: rotate(30deg);
+		     -o-transform: rotate(30deg);
+		        transform: rotate(30deg);
+		position: absolute;
+		top: -2px;
+	}
+
+	.research-items:hover > .research-items-back{
+		background: rgba(0,0,0,0.8);
+	}
+
+	.research-items:hover > .research-items-back > .research-items-back-btn-arrowbar{
+		width: 170px;
+	}
+
+	.research-items:hover > .research-items-back > .research-items-back-btn-arrow{
+		position: absolute;
+		left: 261px;
+	}
+/****研究****/
+
+/****教員****/
+	#teacher{
+		width: 100%;
+		height: auto;
+	}
+
+	.teacher-items{
+		width: 100%;
+		height: 350px;
+	}
+
+	.teacher-items-imgbox{
+		width: 50%;
+		height: 100%;
+		float: left;
+		overflow: hidden;
+		text-align: center;
+	}
+
+	.teacher-items-imgbox-img{
+		width: 130%;
+	}
+
+	.teacher-items-text{
+		width: 50%;
+		height: 100%;
+		float: left;
+		overflow: hidden;
+	}
+/****教員****/
+
+/****メンバー****/
+	#member{
+		width: 100%;
+		height: auto;
+		background: #111;
+		color: #FFF;
+	}
+
+	.member-box{
+		width: calc(100% - 50px);
+	    display: -webkit-flex;
+	    display: -moz-flex;
+	    display: -ms-flex;
+	    display: -o-flex;
+	    display: flex;
+	    /*-webkit-justify-content: center;
+    	justify-content: center;
+	    -webkit-align-items: center;*/
+	    -webkit-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	    align-items: center;
+		margin-left: 25px;
+	}
+
+	.member-title{
+		width: 100%;
+		height: 30px;
+		text-align: center;
+		font-size: 1.5rem;
+		padding-top: 50px;
+	}
+
+	.member-box-items{
+		width: calc(100% / 5);
+		text-align: center;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		font-size: 1.5rem;
+		-webkit-flex-grow: 1;
+		flex-grow: 1;
+	}
+/****メンバー****/
+
+/****情報****/
+	#info{
+		width: 100%;
+		height: 500px;
+	}
+
+	#info-map{
+		width: 50%;
+		height: 500px;
+		float: left;
+		overflow: hidden;
+		position: relative;
+	}
+
+	#info-map-img{
+		width: 1500px;
+		height: 1500px;
+		float: left;
+		position: absolute;
+		top: -300px;
+		right: -400px;
+		-webkit-transform: rotate(-45deg);
+		   -moz-transform: rotate(-45deg);
+		    -ms-transform: rotate(-45deg);
+		     -o-transform: rotate(-45deg);
+		        transform: rotate(-45deg);
+	}
+
+	#info-map-img2{
+		width: 100%;
+		height: 100%;
+	}
+
+	#info-text{
+		width: 50%;
+		height: 100%;
+		float: left;
+	}
+
+	#info-text-title{
+		width: calc(100% - 40px);
+		font-size: 1.5rem;
+		padding-left: 20px;
+		padding-top: 80px;
+	}
+
+	#info-text-text{
+		width: calc(100% - 40px);
+		font-size: 1.5rem;
+		padding-left: 20px;
+		/*margin-top: 40px;*/
+		margin-top: 20px;
+	}
+
+	#info-text-text a{
+		color: #60AFFF;
+		border-bottom: solid 1px transparent;
+		-webkit-transition: all 0.5s;
+	   -moz-transition: all 0.5s;
+	    -ms-transition: all 0.5s;
+	     -o-transition: all 0.5s;
+	        transition: all 0.5s;
+	}
+
+	#info-text-text a:hover{
+		border-bottom: solid 1px #60AFFF;
+	}
+/****情報****/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RWD */
+@media only screen and (max-width:600px){
+
+	.content-titles{
+		font-size: 2.0rem;
+	}
+
+
+
+	/****トップ****/
+	
+	#top-logo-text{
+		font-size: 2.5rem;
+	}
+
+	#top-sub{
+		top: calc(50% - 70px);
+		font-size: 1.3rem;
+	}
+
+	#top-btn, #top-btn2, #book-btn{
+		width: 280px;
+		height:40px;
+		left: calc(50% - 140px);
+		font-size: 1.3rem;
+		letter-spacing: 2px;
+	}
+
+	#top-btn{
+		top: calc(50% + 0px);
+	}
+
+	#top-btn2{
+		top: calc(50% + 70px);
+		
+	}
+
+	#book-btn{
+		margin-left: calc(50% - 140px);
+	}
+
+/****トップ****/
+
+	#research{
+		height: 400px;
+	}
+
+	.research-items{
+		width: 100%;
+		height: 25%;
+		clear: both;
+		-webkit-transform: skew(0deg);
+		   -moz-transform: skew(0deg);
+		     -o-transform: skew(0deg);
+	}
+
+	#research-item1{
+		background-position: center center;
+	}
+
+	#research-item2{
+		background-position: center center;
+	}
+
+	#research-item3{
+		background-position: center center;
+	}
+
+	#research-item4{
+		background-position: center center;
+	}
+
+	.research-items-back-title{
+		margin-top: 15px;
+	}
+
+	.research-items-back-subtitle{
+		margin-top: 5px;
+	}
+
+	.research-items-back-btn{
+		top: 70px;
+	}
+
+	.research-items-back-btn-arrowbar{
+		top: 79px;
+	}
+
+	.research-items-back-btn-arrow{
+		top: 78px;
+	}
+
+
+	/* teacher */
+	.teacher-items-text .content-titles{
+		width: calc(100% - 30px);
+		padding-top: 15px;
+		margin-left: 15px;
+	}
+
+	.teacher-items-text .content-subtitles{
+		width: calc(100% - 30px);
+		margin-left: 15px;
+	}
+
+	.teacher-items-text .content-textbox{
+		width: calc(100% - 30px);
+		margin-left: 15px;
+		padding-bottom: 10px;
+	}
+
+	.teacher-items{
+		width: 100%;
+		height: 170px;
+	}
+
+	.teacher-items-imgbox-img{
+		width: 150%;
+	}
+
+	.professor{ /* 今の画像に合わせてちょとずるした */
+		margin-left: -5px;
+	}
+
+	.teacher-items-text{
+		width: 50%;
+		height: 100%;
+		float: left;
+	}
+
+	/* member */
+
+	.member-box-items{
+		width: 50%;
+	}
+
+
+
+
+	#info{
+		height: 800px;
+	}
+
+
+	#info-map{
+		width: 100%;
+		height: 400px;
+		clear: left;
+	}
+
+	#info-map-img{
+		width: 1500px;
+		height: 1300px;
+		clear: left;
+	}
+
+	#info-text{
+		width: 100%;
+		height: 300px;
+		clear: left;
+	}
+
+	#info-text-title{
+		width: calc(100% - 40px);
+		font-size: 1.2rem;
+		padding-left: 20px;
+		padding-top: 60px;
+	}
+
+	#info-text-text{
+		width: calc(100% - 40px);
+		font-size: 1.2rem;
+		padding-left: 20px;
+		margin-top: 10px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,80 @@
+<div id="popup-wrapper">
+	<div id="popup-topmargin"></div>
+
+	<!-- 編集する場合はaタグの中のURLとdivタグの中の文字を編集してください -->
+	<a :href="path + 'index.html#top'">
+		<div class="popup-items">
+			TOP
+		</div>
+	</a>
+
+	<!-- 編集する場合はaタグの中のhrefの中のURLとdivタグの中の文字を編集してください -->
+	<a :href="path + 'index.html#about'">
+		<div class="popup-items">
+			ABOUT
+		</div>
+	</a>
+
+	<!-- 編集する場合はaタグの中のURLとdivタグの中の文字を編集してください -->
+	<a :href="path + 'index.html#book'">
+		<div class="popup-items">
+			PUBLICATIONS
+		</div>
+	</a>
+
+	<!-- 編集する場合はaタグの中のURLとdivタグの中の文字を編集してください -->
+	<a :href="path + 'index.html#research'">
+		<div class="popup-items">
+			RESEARCH
+		</div>
+	</a>
+
+	<!-- 編集する場合はaタグの中のURLとdivタグの中の文字を編集してください -->
+	<a :href="path + 'index.html#teacher'">
+		<div class="popup-items">
+			PROFESSORS
+		</div>
+	</a>
+
+	<!-- 編集する場合はaタグの中のURLとdivタグの中の文字を編集してください -->
+	<a :href="path + 'index.html#member'">
+		<div class="popup-items">
+			MEMBERS
+		</div>
+	</a>
+
+	<!-- 編集する場合はaタグの中のURLとdivタグの中の文字を編集してください -->
+	<a :href="path + 'index.html#info'">
+		<div class="popup-items">
+			ACCESS
+		</div>
+	</a>
+	<!-- 編集する場合はaタグの中のURLとdivタグの中の文字を編集してください -->
+	<!-- <a href="kadai_2019.html"> -->
+	<a :href="path + 'index.html'">
+		<div class="popup-items">
+			LECTURES
+		</div>
+	</a>
+	<a :href="path + 'Diary.html'">
+		<div class="popup-items">	
+			DIARY
+		</div>
+	</a>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script type="text/javascript">
+	var diaryHeader = new Vue({
+		el: '#popup-wrapper',
+
+		data: {
+			path: ''
+		},
+
+		created: function(){
+			if( globalPopupPath != undefined )
+				path = globalPopupPath;
+		}
+	})
+</script>

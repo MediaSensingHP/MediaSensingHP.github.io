@@ -1,0 +1,52 @@
+@import url(sub_style.css);
+
+/****トップ****/
+
+	.top-summary, .top-research{
+		font-size: 1.3rem;
+		margin-bottom: 80px;
+	}
+
+	.top-subtitles{
+		font-weight: bold;
+		margin-top: 40px;
+		margin-bottom: 30px;
+		padding: 1px 0 1px 10px;
+		border-left: solid 1px;
+	}
+
+	.top-summary-l{
+		width: calc(100% - 320px);
+		float: left;
+	}
+
+	.top-summary-r{
+		width: 300px;
+		margin-left: 20px;
+		float: left;
+	}
+
+	.top-clear{
+		clear: both;
+	}
+
+	.top-summary-img, .top-img{
+ 		width: 300px;
+	}
+
+	.top-img{
+		width: 800px;
+		display: block;
+ 		margin-left: auto;
+ 		margin-right: auto;
+ 		margin-top: 20px;
+ 		margin-bottom: 20px;
+	}
+
+	.bxsize{
+		max-width: 700px;
+		display: block;
+  		margin-top: 30px;
+	}
+
+

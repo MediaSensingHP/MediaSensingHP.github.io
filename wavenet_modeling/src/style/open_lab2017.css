@@ -1,0 +1,136 @@
+@import url(sub_style.css);
+
+
+/****トップ****/
+
+	.top-content, .top-calender{
+		width: calc(100% - 120px);
+		font-size: 1.3rem;
+		margin-left:60px;
+		margin-bottom: 15px;
+		margin-top: 15px;
+	}
+
+	.top-subtitles{
+		width: calc(100% - 120px);
+		font-weight: bold;
+		margin-top: 30px;
+		margin-bottom: 20px;
+		padding: 1px 0 1px 10px;
+		border-left: solid 1px;
+	}
+
+	.top-subsubtitles{
+		width: calc(100% - 120px);
+		font-weight: bold;
+		font-size: 1.3rem;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		padding: 1px 0 1px 0px;
+	}
+
+	.top-calender{
+		margin-top:30px;
+	}
+
+	.top-clear{
+		clear: both;
+	}
+
+	.top-img{
+		width: calc(100% - 120px);
+		display: block;
+ 		margin-top: 30px;
+ 		margin-bottom: 30px;
+	}
+
+	.bgcolor0{
+		background-color:#f0f0f0;
+	}
+
+	.bgcolor1{
+		background-color:#ffffe0;
+	}
+
+	.bgcolor2{
+		background-color:#ffe4e1;
+	}
+
+	.bgcolor3{
+		background-color:#ffdab9;
+	}
+
+	.fontcolor1{
+		color:#ffffe0;
+	}
+
+	.fontcolor2{
+		color:#ffe4e1;
+	}
+
+	.font_new{
+		color: #ff0f0f;
+	}
+
+	hr.style01{
+		width: calc(100% - 120px);
+		margin-left: 60px;
+	}
+
+	/*
+
+	tr.attend{
+		font-size:0.4em;
+	}
+	*/
+
+	.date{
+		font-weight: bold;
+	}
+
+	table{
+		border-collapse: collapse;
+		border: none;
+		font-size:0.9em;
+		color: #696969;
+		vertical-align:top;
+	}
+	th, td{
+		border: 1px solid #696969;
+		font-size:0.9em;
+		color: #696969;
+		vertical-align:top;
+		width:100px;
+	}
+	th{
+		background-color:#bbbbbb;
+	}
+	ul.date-info{
+		list-style:none;
+		margin:0;
+		padding:1px;
+	}
+
+	div.time-info{
+		margin-bottom:1px;
+	}
+
+
+
+
+
+
+
+@media only screen and (max-width:600px){
+
+	.top-content, .top-calender{
+		width: calc(100% - 40px);
+		margin-left: 20px;
+	}
+
+	.top-img{
+		width: 100%;
+	}
+
+
+}
